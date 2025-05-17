@@ -17,12 +17,14 @@ const App = () => (
       <Sonner />
       <div className="min-h-screen bg-[#0B0B0F] flex flex-col">
         <Header />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </BrowserRouter>
+        <div className="flex-1">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
       </div>
     </TooltipProvider>
   </QueryClientProvider>
