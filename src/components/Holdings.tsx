@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Checkbox } from "@/components/ui/checkbox";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Bitcoin, Tether, Check } from "lucide-react";
+import { Bitcoin, Check, Wallet } from "lucide-react";
 
 const Holdings = () => {
   const [selectedAssets, setSelectedAssets] = useState<string[]>([]);
@@ -68,7 +68,7 @@ const Holdings = () => {
       id: "usdt1",
       name: "Tether",
       symbol: "USDT",
-      icon: <Tether className="text-[#26A17B]" size={20} />,
+      icon: <Wallet className="text-[#26A17B]" size={20} />, // Changed from Tether to Wallet icon
       amount: "3096.54 USDT",
       value: "$ 3,142.21",
       currentMarketRate: "$1.015/USDT",
@@ -137,7 +137,7 @@ const Holdings = () => {
       id: "usdt2",
       name: "Tether",
       symbol: "USDT",
-      icon: <Tether className="text-[#26A17B]" size={20} />,
+      icon: <Wallet className="text-[#26A17B]" size={20} />, // Changed from Tether to Wallet icon
       amount: "3096.54 USDT",
       value: "$ 3,142.21",
       currentMarketRate: "$1.015/USDT",
