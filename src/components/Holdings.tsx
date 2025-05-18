@@ -156,7 +156,10 @@ const Holdings = () => {
   ];
 
   return (
-    <div className="w-full bg-[#0F1118] border border-[#1E2134] rounded-lg overflow-hidden">
+    <div className="w-full bg-[#0F1118] p-3 border border-[#1E2134] rounded-lg overflow-hidden">
+      
+
+      
       <div className="p-4 border-b border-[#1E2134]">
         <h3 className="text-white text-base font-medium">Holdings</h3>
       </div>
